@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="Utilize the Flow before Stepping into the Same River Twice: Certainty Represented Knowledge Flow for Refusal-Aware Instruction Tuning"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>CRaFT</title>
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+  <style>
+    table{border-top:1px solid #333;border-left:1px solid #333;border-spacing:0;background-color:#fff;width:100%}
+    table td{border-bottom:1px solid #333;border-right:1px solid #333;font-size:13px;padding:5px}
+    .et2{color:rgb(0, 0, 0);text-align:center;}
+    .et11{color:rgb(0, 0, 0);text-align:center ;}
+    .et5{color:rgb(0, 0, 0);}
+    </style>
+</head>
+
+<body>
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <div id="title-container">
+              <h1 class="title is-1 publication-title">
+                <span class="times-new-roman-i">Utilize the Flow before Stepping into the Same River Twice:</span> 
+                <span class="times-new-roman">Certainty Represented Knowledge Flow for Refusal-Aware Instruction Tuning</span>
+              </h1>
+              
+            </div>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">Runchuan Zhu<sup>&clubs;</sup><sup>&spades;</sup><sup>*</sup>,</span>
+              <span class="author-block">Zhipeng Ma<sup>&hearts;</sup><sup>*</sup>,</span>
+              <span class="author-block">Jiang Wu<sup>&spades;</sup><sup>*</sup><sup>&dagger;</sup>,</span>
+              <span class="author-block">Junyuan Gao<sup>&diams;</sup><sup>&spades;</sup>,</span>
+              <span class="author-block"><a href="https://myownskyw7.github.io/" target="_blank">Jiaqi Wang</a><sup>&spades;</sup>,</span>
+              <span class="author-block"><a href="http://dahua.site/" target="_blank">Dahua Lin</a><sup>&spades;</sup>,</span>
+              <span class="author-block"><a href="https://conghui.github.io/" target="_blank">Conghui He</a><sup>&spades;</sup><sup>&Dagger;</sup></span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <sup>&spades;</sup> Shanghai Artificial Intelligence Laboratory<br>  
+                <sup>&clubs;</sup> Peking University<br> 
+                <sup>&hearts;</sup> Southwest Jiaotong University<br> 
+                <sup>&diams;</sup> Hangzhou Institute for Advanced Study, University of Chinese Academy of Sciences
+              </span>
+              <span class="eql-cntrb">
+                <small>
+                  <br>
+                  <sup>*</sup>Equal contribution,
+                  <sup>&dagger;</sup>Project lead,
+                  <sup>&Dagger;</sup>Corresponding authors
+                </small>
+              </span>
+            </div>
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2410.06913" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                  </a>
+                </span>
+                <!-- Github link -->
+                <span class="link-block">
+                  <a href="https://github.com/opendatalab/CRaFT" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+                </span>
+                <br><br>
+                <span>
+                  <a href="https://zrc007.github.io/CRaFT_page/" target="_blank">English</a> ｜ 简体中文
+                </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            拒答感知指令微调（Refusal-Aware Instruction Tuning, RAIT）使大型语言模型（LLMs）能够拒绝回答未知问题。通过将训练数据中未知问题的回答修改为拒答，例如“I don't know”，RAIT增强了LLMs的可靠性并减少了它们的幻觉现象。通常，RAIT根据初始LLM回答的正确性来修改训练样本。然而，这种粗糙的方法可能导致LLMs过度拒绝回答它们本可以正确回答的问题，这就是我们称之为“过度拒答（over-refusal）”的问题。本文探讨了过度拒答的两个主要原因：<strong><em>静态冲突</em></strong>出现在仅根据正确性构建RAIT数据时，导致LLM特征空间中相似的样本被赋予不同的标签；<strong><em>动态冲突</em></strong>则由于LLM在微调过程中知识状态的变化而产生，即先前的未知问题变为已知，但训练数据仍基于初始LLM的状态保持不变。这些冲突导致训练后的LLM将已知问题误判为未知问题，从而引发过度拒答。
+            为了解决这个问题，我们提出了Certainty Represented Knowledge Flow for Refusal-Aware Instruction Tuning（CRaFT）。CRaFT主要有两项贡献：首先，我们引入了回答的确定性，以选择性地过滤和修改数据，减少静态冲突；其次，我们提出了rehearsal training，以表征LLM知识状态的变化，从而帮助在微调过程中缓解动态冲突。我们在开放式问答和选择题任务上进行了广泛的实验，实验结果表明，CRaFT能够在RAIT过程中提升LLM的整体性能。
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+<section class="section hero is-small">
+  <div class="hero-body">
+    <div class="container  is-max-desktop">
+      <h2 class="title is-3">Overview</h2>
+      <div class="level-set has-text-justified">
+        <p>先前的RAIT方法导致了显著的过度拒绝，而我们提出了CRaFT缓解这一问题，提高了大型语言模型的可靠性和有用性。</p>
+     </div>
+     <br><br>
+     <figure>
+      <img src="static/images/over-refusal.jpg" alt="">
+    </figure>
+      </div>
+   </div>
+ </div>
+</section>
+
+<section class="section hero">
+  <div class="hero-body">
+    <div class="container  is-max-desktop">
+      <h2 class="title is-3">Conflicts in RAIT</h2>
+      <div class="level-set has-text-justified">
+        <p>(1) <strong><em>静态冲突</em></strong>: 在LLM的特征空间中，两个表征接近的样本可能会在之前的RAIT框架下分别被分配不同的监督信号。</p>
+        <p>(2) <strong><em>动态冲突</em></strong>: 在监督微调（SFT）期间，LLM的知识状态会发生变化，问题可能会从未知转变为已知，监督信号也应发生变化。</p>
+     </div>
+     <br><br>
+     <figure>
+      <img src="static/images/two-conflicts.jpg" alt="">
+    </figure>
+      </div>
+   </div>
+ </div>
+</section>
+
+<section class="section hero">
+  <div class="hero-body">
+    <div class="container  is-max-desktop">
+      <h2 class="title is-3">Analysis on Static Conflict</h2>
+      <div class="level-set has-text-justified">
+        仅使用Correctness构造数据集的方法存在严重的静态冲突，引入Certainty后可以明显缓解此现象。
+     </div>
+     <br>
+     <figure>
+      <img src="static/images/analysis.jpg" alt="">
+    </figure>
+      </div>
+   </div>
+ </div>
+</section>
+
+<section class="section hero">
+  <div class="hero-body">
+    <div class="container  is-max-desktop">
+      <h2 class="title is-3">Methodology</h2>
+      <div class="level-set has-text-justified">
+        CRaFT包含两个阶段：阶段1，查询LLM的知识状态与知识流动；阶段2，拒答感知指令构建与微调。
+     </div>
+     <br>
+     <figure>
+      <img src="static/images/method.jpg" alt="">
+    </figure>
+      </div>
+   </div>
+ </div>
+</section>
+
+<section class="section hero">
+  <div class="hero-body">
+    <div class="container  is-max-desktop">
+      <h2 class="title is-3">Experiment</h2>
+      <div class="level-set has-text-justified">
+        我们分析了先前metric的不足，并提出了更为全面的metric：Truthful Helpfulness Score (THS)。
+      </div>
+      <br>
+      <figure style="text-align: center;">
+        <img style="max-width: 50%; height: auto;" src="static/images/metric.jpg" alt="">
+      </figure>
+      <br>
+      <div class="level-set has-text-justified">
+        我们在MCQA（多项选择问答）任务和OEQA（开放问答）任务进行实验，实验结果表明，CRaFT在所有任务和设置下均超越了先前的RAIT方法。
+      </div>
+      <br>
+      <div style="text-align: center;">
+        <table style="width:580pt;">
+          <colgroup>
+           <col width="70" style="width:70.75pt;"> 
+           <col width="52" style="width:52.55pt;"> 
+           <col width="100" style="width:100.20pt;"> 
+           <col width="25" style="width:25.95pt;"> 
+           <col width="25" style="width:25.20pt;"> 
+           <col width="27" style="width:27.35pt;"> 
+           <col width="24" style="width:24.55pt;" span="2"> 
+           <col width="29" style="width:29.40pt;"> 
+           <col width="25" style="width:25.95pt;"> 
+           <col width="25" style="width:25.20pt;"> 
+           <col width="30" style="width:30.15pt;"> 
+           <col width="24" style="width:24.55pt;"> 
+           <col width="23" style="width:23.15pt;"> 
+           <col width="29" style="width:29.40pt;"> 
+          </colgroup>
+          <tbody>
+           <tr height="15"> 
+            <td rowspan="3" class="et2">LLMS</td> 
+            <td colspan="2" class="et11">QA Type</td> 
+            <td colspan="6" class="et11">MCQA</td> 
+            <td colspan="6" class="et11">OEQA</td> 
+           </tr> 
+           <tr height="15"> 
+            <td colspan="2" class="et11">Dataset</td> 
+            <td colspan="3" class="et11">MMLU (ID)</td> 
+            <td colspan="3" class="et11">ARC-c (OOD)</td> 
+            <td colspan="3" class="et11">TriviaQA (ID)</td> 
+            <td colspan="3" class="et11">NQ (OOD)</td> 
+           </tr> 
+           <tr height="15"> 
+            <td colspan="2" class="et11">Metric</td> 
+            <td class="et11">Pc</td> 
+            <td class="et11">Pw</td> 
+            <td class="et11">THS</td> 
+            <td class="et11">Pc</td> 
+            <td class="et11">Pw</td> 
+            <td class="et11">THS</td> 
+            <td class="et11">Pc</td> 
+            <td class="et11">Pw</td> 
+            <td class="et11">THS</td> 
+            <td class="et11">Pc</td> 
+            <td class="et11">Pw</td> 
+            <td class="et11">THS</td> 
+           </tr> 
+           <tr height="15"> 
+            <td rowspan="7" class="et2">LLaMA2- 7B- CHAT</td> 
+            <td rowspan="4" class="et2">Baselines</td> 
+            <td class="et11">Init-Basic</td> 
+            <td class="et11"><b>45.6</b></td>
+            <td class="et11">52.8</td> 
+            <td class="et11">00.0</td>
+            <td class="et11"><b>53.9</b></td>
+            <td class="et11">46.0</td> 
+            <td class="et11">0.00</td> 
+            <td class="et11"><b>54.0</b></td>
+            <td class="et11">46.0</td> 
+            <td class="et11">00.0</td> 
+            <td class="et11"><b>29.3</b></td>
+            <td class="et11">70.7</td> 
+            <td class="et11">00.0</td> 
+           </tr> 
+           <tr height="15"> 
+            <td class="et11">Init-Refuse</td> 
+            <td class="et11">36.4</td> 
+            <td class="et11">38.9</td> 
+            <td class="et11">03.9</td> 
+            <td class="et11">44.4</td> 
+            <td class="et11">35.7</td> 
+            <td class="et11">02.6</td> 
+            <td class="et11">37.0</td> 
+            <td class="et11">21.7</td> 
+            <td class="et11">11.5</td> 
+            <td class="et11">20.8</td> 
+            <td class="et11">38.6</td> 
+            <td class="et11">04.8</td> 
+           </tr> 
+           <tr height="15"> 
+            <td class="et11">Van-Tuning</td> 
+            <td class="et11">46.9</td> 
+            <td class="et11">53.1</td> 
+            <td class="et11">01.2</td> 
+            <td class="et11">54.5</td> 
+            <td class="et11">45.5</td> 
+            <td class="et11">01.2</td> 
+            <td class="et11">48.6</td> 
+            <td class="et11">44.5</td> 
+            <td class="et11">-03.7</td> 
+            <td class="et11">18.3</td> 
+            <td class="et11">50.2</td> 
+            <td class="et11">-02.5</td> 
+           </tr> 
+           <tr height="15"> 
+            <td class="et11">R-Tuning</td> 
+            <td class="et11">44.5</td> 
+            <td class="et11">39.6</td> 
+            <td class="et11">11.3</td> 
+            <td class="et11">55.8</td> 
+            <td class="et11">38.1</td> 
+            <td class="et11">11.1</td> 
+            <td class="et11">41.3</td> 
+            <td class="et11">18.3</td> 
+            <td class="et11">19.7</td> 
+            <td class="et11">16.2</td> 
+            <td class="et11">27.6</td> 
+            <td class="et11">04.7</td> 
+           </tr> 
+           <tr height="15"> 
+            <td class="et11">Ours</td> 
+            <td class="et11">CRaFT</td> 
+            <td class="et11">43.9</td> 
+            <td class="et11">36.4</td> 
+            <td class="et11">12.5</td> 
+            <td class="et11">54.7</td> 
+            <td class="et11">35.9</td> 
+            <td class="et11">12.6</td> 
+            <td class="et11">38.5</td> 
+            <td class="et11"><b>12.9</b></td>
+            <td class="et11"><b>23.3</b></td>
+            <td class="et11">15.8</td> 
+            <td class="et11">22.4</td> 
+            <td class="et11"><b>06.5</b></td>
+           </tr> 
+           <tr height="15"> 
+            <td rowspan="2" class="et2">Ablations</td> 
+            <td class="et11">w/o flow</td> 
+            <td class="et11">39.7</td> 
+            <td class="et11"><b>31.0</b></td>
+            <td class="et11"><b>13.0</b></td>
+            <td class="et11">51.4</td> 
+            <td class="et11"><b>32.3</b></td>
+            <td class="et11">13.5</td> 
+            <td class="et11">45.2</td> 
+            <td class="et11">20.5</td> 
+            <td class="et11">21.1</td> 
+            <td class="et11">21.2</td> 
+            <td class="et11">38.8</td> 
+            <td class="et11">05.2</td> 
+           </tr> 
+           <tr height="15"> 
+            <td class="et11">w/o cer</td> 
+            <td class="et11">38.4</td> 
+            <td class="et11">32.1</td> 
+            <td class="et11">11.5</td> 
+            <td class="et11">52.5</td> 
+            <td class="et11">32.9</td> 
+            <td class="et11"><b>13.9</b></td>
+            <td class="et11">38.5</td> 
+            <td class="et11">15.7</td> 
+            <td class="et11">20.1</td> 
+            <td class="et11">14.6</td> 
+            <td class="et11"><b>22.1</b></td>
+            <td class="et11">05.4</td> 
+           </tr> 
+           <tr height="15"> 
+            <td rowspan="7" class="et2">LLaMA3- 8B- INSTRUCT</td> 
+            <td rowspan="4" class="et2">Baselines</td> 
+            <td class="et11">Init-Basic</td> 
+            <td class="et11"><b>66.8</b></td>
+            <td class="et11">33.1</td> 
+            <td class="et11">00.0</td> 
+            <td class="et11"><b>80.6</b></td>
+            <td class="et11">19.5</td> 
+            <td class="et11">00.0</td> 
+            <td class="et11"><b>66.8</b></td>
+            <td class="et11">33.2</td> 
+            <td class="et11">00.0</td> 
+            <td class="et11"><b>40.3</b></td>
+            <td class="et11">59.7</td> 
+            <td class="et11">00.0</td> 
+           </tr> 
+           <tr height="15"> 
+            <td class="et11">Init-Refuse</td> 
+            <td class="et11">50.0</td> 
+            <td class="et11">17.0</td> 
+            <td class="et11">15.6</td> 
+            <td class="et11">65.3</td> 
+            <td class="et11">14.4</td> 
+            <td class="et11">05.6</td> 
+            <td class="et11">53.9</td> 
+            <td class="et11">20.8</td> 
+            <td class="et11">12.0</td> 
+            <td class="et11">31.1</td> 
+            <td class="et11">38.6</td> 
+            <td class="et11">05.0</td> 
+           </tr> 
+           <tr height="15"> 
+            <td class="et11">Van-Tuning</td> 
+            <td class="et11">69.5</td> 
+            <td class="et11">30.5</td> 
+            <td class="et11">08.0</td> 
+            <td class="et11">80.3</td> 
+            <td class="et11">19.7</td> 
+            <td class="et11">-01.3</td> 
+            <td class="et11">55.0</td> 
+            <td class="et11">38.1</td> 
+            <td class="et11">-21.8</td> 
+            <td class="et11">21.0</td> 
+            <td class="et11">48.5</td> 
+            <td class="et11">-11.7</td> 
+           </tr> 
+           <tr height="15"> 
+            <td class="et11">R-Tuning</td> 
+            <td class="et11">63.9</td> 
+            <td class="et11">21.6</td> 
+            <td class="et11">20.4</td> 
+            <td class="et11">79.4</td> 
+            <td class="et11">16.2</td> 
+            <td class="et11">12.2</td> 
+            <td class="et11">45.4</td> 
+            <td class="et11">13.2</td> 
+            <td class="et11">18.8</td> 
+            <td class="et11">17.2</td> 
+            <td class="et11">25.6</td> 
+            <td class="et11">-00.1</td> 
+           </tr> 
+           <tr height="15"> 
+            <td class="et11">Ours</td> 
+            <td class="et11">CRaFT</td> 
+            <td class="et11">53.3</td> 
+            <td class="et11"><b>09.6</b></td>
+            <td class="et11"><b>34.0</b></td>
+            <td class="et11">74.1</td> 
+            <td class="et11"><b>12.7</b></td>
+            <td class="et11"><b>21.4</b></td>
+            <td class="et11">43.5</td> 
+            <td class="et11"><b>10.9</b></td>
+            <td class="et11"><b>21.5</b></td>
+            <td class="et11">19.0</td> 
+            <td class="et11">27.5</td> 
+            <td class="et11"><b>00.4</b></td>
+           </tr> 
+           <tr height="15"> 
+            <td rowspan="2" class="et2">Ablations</td> 
+            <td class="et11">w/o flow</td> 
+            <td class="et11">57.5</td> 
+            <td class="et11">15.3</td> 
+            <td class="et11">27.2</td> 
+            <td class="et11">75.8</td> 
+            <td class="et11">14.9</td> 
+            <td class="et11">13.9</td> 
+            <td class="et11">49.1</td> 
+            <td class="et11">18.0</td> 
+            <td class="et11">12.8</td> 
+            <td class="et11">22.3</td> 
+            <td class="et11">41.6</td> 
+            <td class="et11">-05.8</td> 
+           </tr> 
+           <tr height="15"> 
+            <td class="et11">w/o cer</td> 
+            <td class="et11">62.1</td> 
+            <td class="et11">18.4</td> 
+            <td class="et11">25.0</td> 
+            <td class="et11">78.2</td> 
+            <td class="et11">17.3</td> 
+            <td class="et11">06.5</td> 
+            <td class="et11">43.0</td> 
+            <td class="et11">11.2</td> 
+            <td class="et11">20.5</td> 
+            <td class="et11">15.8</td> 
+            <td class="et11"><b>23.5</b></td>
+            <td class="et11">-00.1</td> 
+           </tr> 
+          </tbody>
+         </table>
+      </div>
+   </div>
+ </div>
+</section>
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@article{zhu2024utilize,
+        title={Utilize the Flow before Stepping into the Same River Twice: Certainty Represented Knowledge Flow for Refusal-Aware Instruction Tuning},
+        author={Zhu, Runchuan and Ma, Zhipeng and Wu, Jiang and Gao, Junyuan and Wang, Jiaqi and Lin, Dahua and He, Conghui},
+        journal={arXiv preprint arXiv:2410.06913},
+        year={2024}
+}</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <h2 class="title">Contact</h2>
+        <!-- <div class="TEXT"> -->
+          <p>
+            If you have any problems or feedback with the Project, please contact:
+          </p>
+          <ul style="list-style-type: disc;">
+            <li>Runchuan Zhu at <strong>zhurunchuan@pjlab.org.cn</strong></li>
+            <li>Zhipeng Ma at <strong>mazhipeng1024@my.swjtu.edu.cn</strong></li>
+            <li>Jiang Wu at <strong>wujiang@pjlab.org.cn</strong></li>
+            <li>Conghui He at <strong>heconghui@pjlab.org.cn</strong></li>
+          </ul> 
+        <!-- </div> -->
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
